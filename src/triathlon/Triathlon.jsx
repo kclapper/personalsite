@@ -15,14 +15,14 @@ const bikemap = new URL('./2023-pics/bike-course.png', import.meta.url);
 
 export default function Triathlon() {
   return <StrictMode>
-           <div className="container pt-4">
+           <div className="container-lg px-4 px-lg-0 pt-4">
              <div className="row justify-content-center">
                <div className="col-lg-8">
                  <h2 className='display-2 text-center'>
                    Boston Triathlon 2023!
                  </h2>
                  <hr />
-                 <p className="">
+                 <p>
                    Hey folks! I'm doin' another triathlon this year and I'd
                    love it if you'd came to hang out 😁 I'd really appreciate
                    the support, especially at the end of the race as my

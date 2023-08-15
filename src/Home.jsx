@@ -22,7 +22,7 @@ export default function Home() {
              <p className='text-center'>
                <a href={ resume }
                   download
-                  className='display-3 text-center text-decoration-none'>
+                  className='display-5 text-center text-decoration-none'>
                  Resume
                </a>
              </p>

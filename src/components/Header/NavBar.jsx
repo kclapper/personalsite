@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 
 import Collapse from 'bootstrap/js/dist/collapse';
 
+import './NavBar.scss';
+
 import NavItem from './NavItem';
 
 const headshot = new URL('./NYC-Headshot.jpg?width=500', import.meta.url);
@@ -18,9 +20,9 @@ export default function NavBar() {
   }, [ element ]);
 
   return <div className='navbar-expand-lg'>
-           <div className='container-fluid mw-100 g-0 pb-4 pt-4 border-bottom'>
+           <div className='container-fluid mw-100 pb-4 pt-4 border-bottom'>
              <div className='row justify-content-center align-items-center'>
-               <div className='col-12 col-lg-2 text-center'>
+               <div className='col-12 col-lg-2 text-center pb-2 pb-lg-0'>
                  <a href="/">
                    <img id='header-headshot'
                         className='img-fluid rounded-circle shadow-lg'

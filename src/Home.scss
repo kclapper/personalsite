@@ -14,12 +14,6 @@ $info:  #74C365;
 
 @import "~bootstrap/scss/bootstrap.scss";
 
-#header-headshot {
-    width: 300;
-    //max-width: 400px;
-    //min-width: 300px;
-}
-
 @include media-breakpoint-down(lg) {
     #basic-info {
         font-size: 2em;

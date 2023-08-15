@@ -12,10 +12,10 @@ export default function Diet() {
            <Header />
            <div className="container pt-4">
              <div className="row justify-content-center">
-               <div className="col-lg-8 fs-3">
-                 <h2 className="display-4">
+               <div className="col-lg-8">
+                 <h5 className="display-5">
                    Foods I Cannot Eat
-                 </h2>
+                 </h5>
                  <hr />
                  <p>
                    Since I'm going through a rigorous food
@@ -26,13 +26,13 @@ export default function Diet() {
                    try cooking for me.
                  </p>
                  <br />
-                 <h4 className="display-6 text-primary">Update 08/03/2023:</h4>
+                 <h6 className="display-6 text-primary">Update 08/03/2023:</h6>
                  <p>
                    The dairy endoscopy was bad! This means I can no longer eat dairy, in perpetuity.
                    The next trial is Wheat, with an endoscopy sometime in October or November.
                  </p>
                  <br/>
-                 <h3 className="display-5 text-decoration-underline"> I Cannot Eat </h3>
+                 <h6 className="display-6 text-decoration-underline"> I Cannot Eat </h6>
                  <p>
                    If I specify "Raw" then that food is
                    okay cooked. Items marked in <strong style={{ color: "red" }}>red </strong>
