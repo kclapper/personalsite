@@ -1,4 +1,5 @@
 import { StrictMode } from "react";
+import { createRoot } from 'react-dom/client';
 
 import './Home.scss';
 
@@ -7,7 +8,7 @@ import Text from './components/Text';
 
 const resume = new URL('./Kyle Clapper Resume.pdf', import.meta.url);
 
-export default function App() {
+export default function Home() {
   return <StrictMode>
            <Header />
            <Text bg='primary' text='light'>
@@ -39,3 +40,5 @@ export default function App() {
            }
          </StrictMode>;
 }
+
+createRoot(document.getElementById('app')).render(<Home />);

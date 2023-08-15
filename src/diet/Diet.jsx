@@ -1,4 +1,5 @@
 import { StrictMode } from "react";
+import { createRoot } from 'react-dom/client';
 
 import './Diet.scss';
 
@@ -6,7 +7,7 @@ import Header from '../components/Header';
 
 import Food from './Food';
 
-export default function App() {
+export default function Diet() {
   return <StrictMode>
            <Header />
            <div className="container pt-4">
@@ -82,3 +83,5 @@ export default function App() {
            </div>
          </StrictMode>;
 }
+
+createRoot(document.getElementById('app')).render(<Diet />);

@@ -1,4 +1,5 @@
 import { StrictMode } from "react";
+import { createRoot } from 'react-dom/client';
 
 import './CS210.scss';
 
@@ -73,3 +74,5 @@ export default function CS210() {
            </div>
          </StrictMode>
 }
+
+createRoot(document.getElementById('app')).render(<CS210 />);
