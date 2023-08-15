@@ -4,7 +4,7 @@ import Collapse from 'bootstrap/js/dist/collapse';
 
 import NavItem from './NavItem';
 
-const headshot = new URL('./NYC-headshot.jpg?width=500', import.meta.url);
+const headshot = new URL('./NYC-Headshot.jpg?width=500', import.meta.url);
 
 const defaultShow = window.matchMedia("(min-width: 992px)").matches;
 
