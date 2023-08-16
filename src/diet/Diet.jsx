@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, useState, useCallback } from "react";
 import { createRoot } from 'react-dom/client';
 
 import './Diet.scss';
@@ -7,7 +7,74 @@ import Header from '../components/Header';
 
 import Food from './Food';
 
+const eliminationFoods = [
+  "Dairy",
+  "Eggs",
+  "Nuts",
+  "Fish",
+  "Shellfish",
+
+  //These items are only bad because of wheat,
+  //during the wheat trial they are okay.
+
+  //"Beer",
+  //"Whiskey and the like",
+  //"Soy sauce (unless marked as gluten free)",
+  //"Oats (unless marked as gluten free)",
+]
+
+const allergyFoods = [
+  "Chickpeas",
+  "Eggplant",
+  "Green Peas",
+  "Pea Protein",
+  "Lentils",
+  "Avocado",
+  "Raw oranges (clementines are suspect)",
+  "Raw banana",
+  "Raw apples",
+  "Raw carrot",
+  "Raw broccoli",
+  "Mango",
+  "Cantaloupe",
+]
+
+function foodMap(elimination, allergy) {
+  const eliminationFoods = elimination.map((food) => (
+    <Food emph key={ food }>{ food }</Food>
+  ));
+
+  const allergyFoods = allergy.map((food) => (
+    <Food key={ food }>{ food }</Food>
+  ));
+
+  return eliminationFoods.concat(allergyFoods);
+}
+
+function matchesQuery(food, query) {
+  food = food.toLowerCase().trim();
+  return food.includes(query);
+}
+
 export default function Diet() {
+  const [foods, setFoods] = useState(foodMap(eliminationFoods, allergyFoods));
+
+  const handleSearch = useCallback((event) => {
+    let query = event.target.value;
+
+    if (query === undefined || query.trim() === '') {
+      setFoods(foodMap(eliminationFoods, allergyFoods));
+      return;
+    }
+
+    query = query.toLowerCase().trim();
+
+    const eliminationResults = eliminationFoods.filter((food) => matchesQuery(food, query));
+    const allergyResults = allergyFoods.filter((food) => matchesQuery(food, query));
+
+    setFoods(foodMap(eliminationResults, allergyResults));
+  }, [foods, setFoods]);
+
   return <StrictMode>
            <Header />
            <div className="container pt-4">
@@ -39,37 +106,14 @@ export default function Diet() {
                    are foods on my elimination diet. They won't cause acute effects and I'll
                    take added care to make sure I don't eat them.
                  </p>
+                 <input type='text'
+                        name='food search'
+                        onChange={ handleSearch }
+                        placeholder='Food search'
+                        aria-label='Food search box'
+                        className='form-control mb-2'/>
                  <ul>
-                   <Food emph>Dairy</Food>
-                   <Food emph>Eggs</Food>
-                   <Food emph>Nuts</Food>
-                   <Food emph>Fish</Food>
-                   <Food emph>Shellfish</Food>
-                   <Food>Chickpeas</Food>
-                   <Food>Eggplant</Food>
-                   <Food>Green Peas</Food>
-                   <Food>Pea Protein</Food>
-                   <Food>Lentils</Food>
-                   <Food>Avocado</Food>
-                   <Food>Raw oranges (clementines are suspect)</Food>
-                   <Food>Raw banana</Food>
-                   <Food>Raw apples</Food>
-                   <Food>Raw carrot</Food>
-                   <Food>Raw broccoli</Food>
-                   <Food>Mango</Food>
-                   <Food>Cantaloupe</Food>
-                   {
-                     //These items are only bad because of wheat,
-                     //during the wheat trial they are okay.
-                     //
-                     //<Food>Beer</Food>
-                     //<Food>Whiskey and the like</Food>
-                     //<Food>
-                     //Soy sauce (unless marked as
-                     //gluten free)
-                     //</Food>
-                     //<Food>Oats (unless marked as gluten free)</Food>
-                   }
+                   { foods }
                  </ul>
                  <p>
                    Additionally: Beans are somewhat suspect in large
