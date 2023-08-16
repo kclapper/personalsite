@@ -57,6 +57,7 @@ export default function Diet() {
                    <Food>Raw carrot</Food>
                    <Food>Raw broccoli</Food>
                    <Food>Mango</Food>
+                   <Food>Cantaloupe</Food>
                    {
                      //These items are only bad because of wheat,
                      //during the wheat trial they are okay.
