@@ -1,4 +1,5 @@
 import NavBar from './NavBar';
+import NavItem from './NavItem';
 
 export default function Header() {
   return <>
@@ -13,6 +14,14 @@ export default function Header() {
              </svg>
            </button>
 
-           <NavBar />
+           <NavBar>
+             <NavItem href='/diet'>
+               Diet
+             </NavItem>
+
+             <NavItem href='/cs210'>
+               CS210
+             </NavItem>
+           </NavBar>
          </>
 }

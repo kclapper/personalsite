@@ -10,7 +10,7 @@ const headshot = new URL('./NYC-Headshot.jpg?width=500', import.meta.url);
 
 const defaultShow = window.matchMedia("(min-width: 992px)").matches;
 
-export default function NavBar() {
+export default function NavBar({ children }) {
   const element = useRef(null);
 
   useEffect(() => {
@@ -20,35 +20,24 @@ export default function NavBar() {
   }, [ element ]);
 
   return <div className='navbar-expand-lg'>
-           <div className='container-fluid mw-100 pb-4 pt-4 border-bottom'>
-             <div className='row justify-content-center align-items-center'>
-               <div className='col-12 col-lg-2 text-center pb-2 pb-lg-0'>
-                 <a href="/">
-                   <img id='header-headshot'
-                        className='img-fluid rounded-circle shadow-lg'
-                        src={ headshot }
-                        alt="Kyle's headshot" />
-                 </a>
-               </div>
-               <div className='col-12 col-lg-3 text-center'>
-                 <div className="d-flex flex-column align-items-center justify-content-center">
-                   <a href='/' className='h1 text-decoration-none'>
-                     <h1 className='display-1'>
-                       Kyle Clapper
-                     </h1>
-                   </a>
-                   <div ref={ element } className={ defaultShow ? 'collapse show' : 'collapse' } id='navMenuCollapse'>
-                     <ul className='navbar-nav'>
-                       <NavItem href='/diet'>
-                         Diet
-                       </NavItem>
+           <div className='d-flex flex-wrap justify-content-center border-bottom py-4'>
+             <a href="/" className='pb-2 pb-lg-0 pe-lg-4'>
+               <img id='header-headshot'
+                    className='img-fluid rounded-circle shadow-lg'
+                    src={ headshot }
+                    alt="Kyle's headshot" />
+             </a>
 
-                       <NavItem href='/cs210'>
-                           CS210
-                       </NavItem>
-                     </ul>
-                   </div>
-                 </div>
+             <div className="d-flex flex-column align-items-center justify-content-center text-center">
+               <a href='/' className='text-black text-decoration-none'>
+                 <h1 className='display-1'>
+                   Kyle Clapper
+                 </h1>
+               </a>
+               <div ref={ element } className={ defaultShow ? 'collapse show' : 'collapse' } id='navMenuCollapse'>
+                 <ul className='navbar-nav'>
+                   { children }
+                 </ul>
                </div>
              </div>
            </div>
