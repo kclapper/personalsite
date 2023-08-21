@@ -38,14 +38,13 @@ export default function Triathlon() {
                  </p>
                  <p>
                    After the race, we're drinking. Specifically tequila. Specifically
-                   with tacos. Specifically at <a href="https://goo.gl/maps/UnwGLxMdzSgRyahu5">Loco Taqueria & Oyster Bar</a>.
+                   with tacos. Specifically at <a href="https://goo.gl/maps/UnwGLxMdzSgRyahu5" target='_blank'>Loco Taqueria & Oyster Bar</a>.
                  </p>
                  <p>
                    While I'm actually running the race, people can
-                   hangout at Carson beach (or Dorchester brewing company). The beach will
+                   hangout at Carson beach. It'll
                    be a bit busy but you'll have a good view of the swim course and racers
-                   in the transition area. I encourage you to bring beach games, and
-                   as far as I can tell, there's no prohibition against day drinking.
+                   in the transition area.
                  </p>
 
                  <div align='center'>
@@ -62,18 +61,23 @@ export default function Triathlon() {
                    </Row>
                    <Row title='Location'>
                      Carson Beach, Boston MA <br/>
-                     <a href='https://goo.gl/maps/rCLAu8hZCWjnTgvQ9'>
+                     <a href='https://goo.gl/maps/rCLAu8hZCWjnTgvQ9' target='_blank'>
                        Map to here
                      </a>
                    </Row>
                    <Row title='Race Start Time'>
-                     7:00am
+                     7:12am (Wave 3)
                    </Row>
                    <Row title='Est. Finish Time'>
-                     9:45am (~2hr 45min hours total)
+                     10:00am (~2hr 45min hours total)
                    </Row>
-                   <Row title='Vibe'>
-                     Beach casual
+                   <Row title='Forecast'>
+                     <a href="https://weather.com/weather/weekend/l/6f03ddf87585ae5600e3dee28e519d788ddeb749efefa3f236796ef7167fc411"
+                        target='_blank'
+                        // className='btn btn-info text-white'
+                        alt="Triathlon Weather">
+                       Weather.com
+                     </a>
                    </Row>
                    <Row title='Post Race Tacos'>
                      <a href="https://goo.gl/maps/UnwGLxMdzSgRyahu5">Loco Taqueria & Oyster Bar</a>
@@ -81,17 +85,48 @@ export default function Triathlon() {
                  </Table>
 
                  <p>
-                   If you haven't already, definitely lmk if you're planning to go! I'll
-                   be sure to keep you in the loop.
+                   I'll arrive around 6:15pm and <strong>won't have my phone on me</strong>.
+                   You'll be able to find me around the beach house near the starting line.
                  </p>
                  <p>
-                   Before the race starts, I'll be waiting by the beach house
-                   near the starting line.
+                   At time of writing (8/21/23 7:14pm) it looks like it's gonna rain
+                   during the race. For the folks coming to spectate, it's likely not
+                   gonna be a super nice beach day. I recommend checking out &nbsp;
+                   <a href="https://www.google.com/maps/search/%22breakfast%22+OR+%22bar%22+OR+%22cafe%22/@42.3274212,-71.0554064,15.12z/data=!4m8!2m7!3m5!2sCarson+Beach,+Boston,+MA!3s0x89e37af64bec5499:0x450e8f0699e5bd61!4m2!1d-71.0475482!2d42.3261384!6e5?entry=ttu"
+                      target='_blank'>
+                     a local cafe or bar (if one's open)
+                   </a> if you have time to kill before I finish the race.
                  </p>
                  <p>
-                   In the next week I'll pinpoint a more specific meeting location for people during
-                   the race itself.
+                   On race day you'll be able to find a live results page
+                   <a href="https://bostontri.com/results/" alt='Results page'> here</a>
                  </p>
+
+                 {
+                 //<div>
+                 //  <strong>
+                 //    Confirmed Attending
+                 //  </strong>
+                 //  <ul>
+                 //    <li>
+                 //      My parents
+                 //    </li>
+                 //    <li>
+                 //      Sara
+                 //    </li>
+                 //    <li>
+                 //      Steph
+                 //    </li>
+                 //    <li>
+                 //      Genevra (Laura?)
+                 //    </li>
+                 //  </ul>
+                 //  <p>
+                 //    If you haven't already, definitely lmk if you're planning to go! I'll
+                 //    be sure to keep you in the loop.
+                 //  </p>
+                 //</div>
+                 }
 
                  <div className="w-75 text-center mx-auto">
                    <Table title='Race Order & Distances'>
@@ -125,11 +160,24 @@ export default function Triathlon() {
                         width='100%' className='shadow-sm rounded mb-2' />
                  </div>
 
-                 <Table title='Misc. Details'>
-                   <Row title=<a href="https://bostontri.com/">
-                       Race website
-                   </a> />
-                 </Table>
+                 <div>
+                   <h5 className='display-5'>
+                     Misc. Details
+                   </h5>
+                   <ul>
+                     <li>
+                       <a href="https://bostontri.com/" target='_blank'>
+                         Race website
+                       </a>
+                     </li>
+
+                     <li>
+                       <a href="https://f978b82b-9429-400b-bdc6-0f714a14b86c.usrfiles.com/ugd/f978b8_79f541083e934c5d95a2fd752e70fe38.pdf" alt='Athlete Guide' target='_blank'>
+                         Athlete Guide
+                       </a>
+                     </li>
+                   </ul>
+                 </div>
 
                  <div align='center'>
                    <img src={ finishline }
