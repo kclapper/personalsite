@@ -69,7 +69,7 @@ export default function Triathlon() {
                      7:12am (Wave 3)
                    </Row>
                    <Row title='Est. Finish Time'>
-                     10:00am (~2hr 45min hours total)
+                     10:30am (~3hr 15min total)
                    </Row>
                    <Row title='Forecast'>
                      <a href="https://weather.com/weather/weekend/l/6f03ddf87585ae5600e3dee28e519d788ddeb749efefa3f236796ef7167fc411"
@@ -131,13 +131,19 @@ export default function Triathlon() {
                  <div className="w-75 text-center mx-auto">
                    <Table title='Race Order & Distances'>
                      <Row title='1) Swim'>
-                       0.93 mile (1.5 km)
+                       0.93 mile (1.5 km), ~35 min
                      </Row>
-                     <Row title='2) Bike'>
-                       21.7 miles (35 km)
+                     <Row title='2) Transition 1 (T1)'>
+                       ~10 min
                      </Row>
-                     <Row title='3) Run'>
-                       6.2 miles (10 km)
+                     <Row title='3) Bike'>
+                       21.7 miles (35 km), ~1.5 hr
+                     </Row>
+                     <Row title='4) Transition 2 (T2)'>
+                       ~5 min
+                     </Row>
+                     <Row title='5) Run'>
+                       6.2 miles (10 km), ~55 min
                      </Row>
                    </Table>
                  </div>
