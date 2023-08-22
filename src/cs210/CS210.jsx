@@ -7,6 +7,7 @@ import Header from '../components/Header';
 
 import Slide from './Slide';
 
+const instructions = new URL('./env-instructions.pdf', import.meta.url);
 const folder = new URL('./cs210.zip', import.meta.url);
 
 export default function CS210() {
@@ -15,11 +16,19 @@ export default function CS210() {
            <div className="container pt-4">
              <div className="row justify-content-center">
                <div className="col-lg-8">
-                 <a className='btn btn-primary text-white'
-                    href={ folder }
-                    download>
-                   Download course folder
-                 </a>
+                 <div className='text-center'>
+                   <a className='btn btn-primary text-white mb-2'
+                      href={ instructions }
+                      target='_blank'>
+                     Programming Environment Setup
+                   </a>
+                   <br/>
+                   <a className='btn btn-secondary text-white'
+                      href={ folder }
+                      download>
+                     Download course folder
+                   </a>
+                 </div>
                  <h5 className='display-5'>
                    Slides
                  </h5>
