@@ -7,15 +7,22 @@ import Header from '../components/Header';
 
 import Slide from './Slide';
 
+const folder = new URL('./cs210.zip', import.meta.url);
+
 export default function CS210() {
   return <StrictMode>
            <Header />
            <div className="container pt-4">
              <div className="row justify-content-center">
-               <div className="col-lg-8 fs-3">
-                 <h3 className='display-3'>
+               <div className="col-lg-8">
+                 <a className='btn btn-primary text-white'
+                    href={ folder }
+                    download>
+                   Download course folder
+                 </a>
+                 <h5 className='display-5'>
                    Slides
-                 </h3>
+                 </h5>
                  <ul>
                    <Slide href="week1.pdf">
                      Week 1
