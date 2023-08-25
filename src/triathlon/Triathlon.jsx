@@ -168,6 +168,25 @@ export default function Triathlon() {
 
                  <div>
                    <h5 className='display-5'>
+                     Thanks Bay State!
+                   </h5>
+                   <p>
+                     Huge thanks to Emily and the wonderful people at Bay State Physical Therapy in Beverly!
+                     Without them I'd still be in a whole lot of pain and I certainly wouldn't be able to do this
+                     race. Thank you to Jen for letting me borrow her shirt to race in. You'll get it back freshly
+                     laundered, I promise.
+                   </p>
+                   <p>
+                     If you're in need of physical therapy I can't recommend these people enough. They're fantastic
+                     to work with and incredibly helpful.
+                   </p>
+                   <p>
+                     Thanks again 😊
+                   </p>
+                 </div>
+
+                 <div>
+                   <h5 className='display-5'>
                      Misc. Details
                    </h5>
                    <ul>
