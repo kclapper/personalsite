@@ -22,6 +22,31 @@ export default function Triathlon() {
                    Boston Triathlon 2023!
                  </h2>
                  <hr />
+
+                 <div className='bg-secondary text-white rounded p-2'>
+                   <h6 className='display-6'>
+                     It's Race Day!
+                   </h6>
+                   Remember:
+                   <ul>
+                     <li>
+                       I won't have my phone with me until after the race. Find me pre-race around the
+                       beach house near the starting line.
+                     </li>
+                     <li>
+                       Here is the link to the live race results:
+                       <a href="https://bostontri.com/results/" alt='Results page'> Live Results</a>
+                       <br />
+                       Use this link to see if I'm running faster/slower than my estimated finish time.
+                     </li>
+                     <li>
+                       After I finish, I'll be taking a few photos near the finish line then heading to get
+                       tacos (see below).
+                     </li>
+                   </ul>
+                 </div>
+                 <hr/>
+
                  <p>
                    Hey folks! I'm doin' another triathlon this year and I'd
                    love it if you'd came to hang out 😁 I'd really appreciate
