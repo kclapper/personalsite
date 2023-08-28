@@ -120,10 +120,13 @@ export default function Triathlon() {
                    </h5>
                    <p>
                      There were professional photographers around the course taking photos
-                     of all the athletes. Once those photos are released, I'll make them available
-                     here. I'll also collect photos from the various friends and family in attendance.
-                     Stay tuned!
+                     of all the athletes. Once those photos are released, I'll add them to the
+                     photo album, so stay tuned!
                    </p>
+                   <a href="https://photos.app.goo.gl/8RESNyDBw7MDPMKm8"
+                      target="_blank">
+                     Link to the photo album
+                   </a>
                    <hr />
                  </div>
 
