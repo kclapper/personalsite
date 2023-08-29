@@ -7,7 +7,7 @@ import Table from './Table.jsx';
 import Row from './Row.jsx';
 
 const logo = new URL('triathlon.svg', import.meta.url);
-const meonground = new URL('./2023-pics/meonground.jpeg', import.meta.url);
+const meonground = new URL('./2023-pics/meonground.jpeg?quality=25', import.meta.url);
 const baystatestage = new URL('./2023-pics/baystatestage.jpeg', import.meta.url);
 const venuemap = new URL('./2023-pics/venu-parking.png', import.meta.url);
 const swimmap = new URL('./2023-pics/swim-course.png', import.meta.url);
@@ -119,9 +119,8 @@ export default function Triathlon() {
                      Pictures
                    </h5>
                    <p>
-                     There were professional photographers around the course taking photos
-                     of all the athletes. Once those photos are released, I'll add them to the
-                     photo album, so stay tuned!
+                     I got a bunch of great photos from family, friends, and photographers around the course!
+                     Thanks everybody!
                    </p>
                    <a href="https://photos.app.goo.gl/8RESNyDBw7MDPMKm8"
                       target="_blank">
