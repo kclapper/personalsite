@@ -1,7 +1,7 @@
 
 export default function Slide({ href, children }) {
   return <a href={ href }
-            download
+            target="_blank"
             className="text-decoration-none">
            <li>
              { children }
