@@ -11,7 +11,8 @@ const instructions = new URL('./env-instructions.pdf', import.meta.url);
 const folder = new URL('./cs210.zip', import.meta.url);
 
 // Slides
-const week1 = new URL('./slides/week1.pdf', import.meta.url);
+const week1_s1 = new URL('./slides/week1-section1.pdf', import.meta.url);
+const week1_s3 = new URL('./slides/week1-section3.pdf', import.meta.url);
 
 export default function CS210() {
   return <StrictMode>
@@ -23,8 +24,12 @@ export default function CS210() {
                    Slides
                  </h6>
                  <ul>
-                   <Slide href={ week1 }>
-                     Week 1
+                   <Slide href={ week1_s1 }>
+                     Week 1 Section 1
+                   </Slide>
+
+                   <Slide href={ week1_s3 }>
+                     Week 1 Section 3
                    </Slide>
                    {
                    //<Slide href="week2.pdf">
