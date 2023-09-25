@@ -14,6 +14,7 @@ const folder = new URL('./cs210.zip', import.meta.url);
 const week1_s1 = new URL('./slides/week1-section1.pdf', import.meta.url);
 const week1_s3 = new URL('./slides/week1-section3.pdf', import.meta.url);
 const week2 = new URL('./slides/week2.pdf', import.meta.url);
+const week3 = new URL('./slides/week3.pdf', import.meta.url);
 
 export default function CS210() {
   return <StrictMode>
@@ -36,11 +37,12 @@ export default function CS210() {
                    <Slide href={ week2 }>
                      Week 2
                    </Slide>
-                   {
 
-                   //<Slide href="week3.pdf">
-                   //  Week 3
-                   //</Slide>
+                   <Slide href={ week3 }>
+                     Week 3
+                   </Slide>
+
+                   {
 
                    //<Slide href="week4.pdf">
                    //  Week 4
