@@ -20,6 +20,7 @@ const week5 = new URL('./slides/week5.pdf', import.meta.url);
 const week6 = new URL('./slides/week6.pdf', import.meta.url);
 const week7 = new URL('./slides/week7.pdf', import.meta.url);
 const week8 = new URL('./slides/week8.pdf', import.meta.url);
+const week9 = new URL('./slides/week9.pdf', import.meta.url);
 
 export default function CS210() {
   return <StrictMode>
@@ -67,11 +68,11 @@ export default function CS210() {
                      Week 8
                    </Slide>
 
-                   {
-                   //<Slide href="week9.pdf">
-                   //  Week 9
-                   //</Slide>
+                   <Slide href={ week9 }>
+                     Week 9
+                   </Slide>
 
+                   {
                    //<Slide href="week10.pdf">
                    //  Week 10
                    //</Slide>
