@@ -30,9 +30,9 @@ export default function NavBar({ children }) {
 
              <div className="d-flex flex-column align-items-center justify-content-center text-center">
                <a href='/' className='text-black text-decoration-none'>
-                 <h1 className='display-1'>
+                 <h2 className='display-2'>
                    Kyle Clapper
-                 </h1>
+                 </h2>
                </a>
                <div ref={ element } className={ defaultShow ? 'collapse show' : 'collapse' } id='navMenuCollapse'>
                  <ul className='navbar-nav'>
