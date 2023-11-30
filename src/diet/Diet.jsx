@@ -12,15 +12,7 @@ const eliminationFoods = [
   "Eggs",
   //"Nuts",
   "Fish",
-  "Shellfish",
-
-  //These items are only bad because of wheat,
-  //during the wheat trial they are okay.
-
-  "Beer",
-  "Whiskey",
-  "Soy sauce (unless marked as gluten free)",
-  "Oats (unless marked as gluten free)",
+  "Shellfish"
 ]
 
 const allergyFoods = [
@@ -93,13 +85,11 @@ export default function Diet() {
                    try cooking for me.
                  </p>
                  <br />
-                 <h6 className="display-6 text-primary">Update 11/27/2023:</h6>
+                 <h6 className="display-6 text-primary">Update 11/30/2023:</h6>
                  <p>
-                   I just had the wheat endoscopy this morning. <b>Wheat is off the diet</b>&nbsp;
-		   while I await results but I can <b>start the nuts trial</b> immediately. If
-	           wheat comes back good then I'll resume eating it, otherwise it will 
-	           stay off the diet. Due to findings during the wheat endoscopy, if the
-	           biopsy results come back bad I'll have to repeat the wheat trial.
+		   <b>I can keep eating Wheat!</b> The endoscopy results came back good. 
+		   Now I can <b>move on to the nuts</b> trial with an endoscopy scheduled 
+		   at the end of February.
                  </p>
                  <br/>
                  <h6 className="display-6 text-decoration-underline"> I Cannot Eat </h6>
