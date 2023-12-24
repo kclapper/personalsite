@@ -22,6 +22,10 @@ export default function Header() {
              <NavItem href='/cs210'>
                CS210
              </NavItem>
+
+             <NavItem href='/boggle'>
+               Boggle
+             </NavItem>
            </NavBar>
          </>
 }
