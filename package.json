@@ -17,6 +17,7 @@
     "sharp": "^0.31.3"
   },
   "dependencies": {
+    "koggle": "^1.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0"
