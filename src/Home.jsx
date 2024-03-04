@@ -40,7 +40,7 @@ export default function Home() {
                </a>
              </div>
 
-             <ResumeSection>
+             {/* <ResumeSection>
                Projects
              </ResumeSection>
 
@@ -199,16 +199,10 @@ export default function Home() {
                    and sound engineering coordinator in 2017 and 2018.
                  </li>
                </ul>
-             </ResumeItem>
+             </ResumeItem> */}
 
 
            </PageContent>
-
-
-
-           <Text>
-             TODO: Make the homepage look better 🤷‍♂️
-           </Text>
          </StrictMode>;
 }
 
