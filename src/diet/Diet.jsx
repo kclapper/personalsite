@@ -10,7 +10,7 @@ import Food from './Food';
 const eliminationFoods = [
   "Dairy",
   "Eggs",
-  //"Nuts",
+  "Nuts",
   "Fish",
   "Shellfish"
 ]
@@ -85,11 +85,12 @@ export default function Diet() {
                    try cooking for me.
                  </p>
                  <br />
-                 <h6 className="display-6 text-primary">Update 11/30/2023:</h6>
+                 <h6 className="display-6 text-primary">Update 03/07/2024:</h6>
                  <p>
-		   <b>I can keep eating Wheat!</b> The endoscopy results came back good. 
-		   Now I can <b>move on to the nuts</b> trial with an endoscopy scheduled 
-		   at the end of February.
+		   <b>Nuts are out</b> The endoscopy results came back bad. 
+		   This means I can no longer have nuts have the rest of my life.
+		   While unfortunately, this was somewhat expected. There are several 
+	           nuts that when eaten raw I get a mild allergic reaction to.
                  </p>
                  <br/>
                  <h6 className="display-6 text-decoration-underline"> I Cannot Eat </h6>
