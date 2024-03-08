@@ -25,20 +25,10 @@ export default function Home() {
              </Text>
 
              <p>
-               After working for several years in the nuclear industry, I
-               quit my job to pursue my passion. Now I'm a computer science
-               master's student at UMass Boston! It's been incredibly
-               rewarding and I look forward to my next adventure after I
-               graduate in May.
+		My resume site has moved to <a href="https://kyleclapper.dev">kyleclapper.dev</a>
+		head there to find my resume, cover letter, and blog.
              </p>
 
-             <div className='w-100 text-center pt-2 pb-4'>
-               <a href={ resume }
-                  download
-                  className='btn btn-info btn-lg text-white text-decoration-none'>
-                 Download Resume
-               </a>
-             </div>
 
              {/* <ResumeSection>
                Projects
