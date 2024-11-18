@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client';
 
 import './Triathlon.scss';
 
-import Table from './Table.jsx';
-import Row from './Row.jsx';
+import Table from '../components/Table.jsx';
+import Row from '../components/Row.jsx';
 
 const logo = new URL('triathlon.svg', import.meta.url);
 const meonground = new URL('./2023-pics/meonground.jpeg?quality=25', import.meta.url);
