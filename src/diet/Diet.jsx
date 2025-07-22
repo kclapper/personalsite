@@ -8,11 +8,11 @@ import Header from '../components/Header';
 import Food from './Food';
 
 const eliminationFoods = [
-  "Dairy",
-  "Eggs",
-  "Nuts",
-  "Fish",
-  "Shellfish"
+  // "Dairy",
+  // "Eggs",
+  // "Nuts",
+  // "Fish",
+  // "Shellfish"
 ]
 
 const allergyFoods = [
@@ -77,28 +77,23 @@ export default function Diet() {
                  </h5>
                  <hr />
                  <p>
-                   Since I'm going through a rigorous food
-                   elimination diet and already have a laundry
-                   list of allergies, I've compiled a list of the
-                   foods I can't eat. I'll actively maintain this
-                   list for the benefit of anyone brave enough to
+                   Since I have a laundry
+                   list of food allergies, I've compiled them here 
+                   for the benefit of anyone brave enough to
                    try cooking for me.
                  </p>
                  <br />
-                 <h6 className="display-6 text-primary">Update 03/07/2024:</h6>
+                 <h6 className="display-6 text-primary">Update 07/21/2025:</h6>
                  <p>
-		   <b>Nuts are out</b> The endoscopy results came back bad. 
-		   This means I can no longer have nuts have the rest of my life.
-		   While unfortunately, this was somewhat expected. There are several 
-	           nuts that when eaten raw I get a mild allergic reaction to.
+                    This list used to be a lot longer. Now that I'm no longer 
+                    doing the food elimination diet for EoE I can eat many 
+                    more foods.
                  </p>
                  <br/>
                  <h6 className="display-6 text-decoration-underline"> I Cannot Eat </h6>
                  <p>
                    If I specify "Raw" then that food is
-                   okay cooked. Items marked in <strong style={{ color: "red" }}>red </strong>
-                   are foods on my elimination diet. They won't cause acute effects and I'll
-                   take added care to make sure I don't eat them.
+                   okay cooked. 
                  </p>
                  <input type='text'
                         name='food search'
@@ -113,9 +108,6 @@ export default function Diet() {
                    Additionally: Beans are somewhat suspect in large
                    quantities. If you're planning on cooking with beans,
                    please check with me first but it should be okay.
-                   <br /><br />
-                   Huge thank you to everyone who's accomodated me through
-                   this endeavor!! I appreciate it so much.
                  </p>
                </div>
              </div>
