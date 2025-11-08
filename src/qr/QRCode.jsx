@@ -1,6 +1,8 @@
 import { StrictMode, useCallback, useRef, useState, useEffect } from "react";
 import { createRoot } from 'react-dom/client';
 
+import QRCode from './qrcodejs/qrcode.js';
+
 import './QRCode.scss';
 
 import Header from '../components/Header';
@@ -84,7 +86,7 @@ export default function QRCodePage() {
                     placeholder="Put your text here" />
             <br/>
             <div className="mb-4 mt-2">
-              <label for="size-range" className="form-label">
+              <label htmlFor="size-range" className="form-label">
                 Size
               </label>
               <br/>
